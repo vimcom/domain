@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>域名信息列表</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/satouriko/LxgwWenKai_Webfonts@v1.101/dist/LXGWWenKai-Regular.css">
+    <link rel="stylesheet" href="/ccs/index.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- 域名表格部分 -->
+        <div class="table-container">
+            <a href="/" class="title-link">域名信息列表</a>
+            <table>
+                <thead>
+                    <tr>
+                        <th>域名</th>
+                        <th>到期时间</th>
+                        <th>注册商</th>
+                        <th>续费金额</th>
+                        <th>备注</th>
+                        <!-- <th>是否交易</th>-->
+                    </tr>
+                </thead>
+                <tbody id="domain-list">
+                    <!-- 动态内容插入 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>©<span id="date"></span> |
+            <a href="https://blog.lyle.pp.ua/" class="footer-link">lyle</a> |
+            <a href="https://who.zmh.me/" class="footer-link">Whois Lookup</a> |
+            <a href="https://query.domains/" class="footer-link">Query.Domains</a>
+    </footer>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>

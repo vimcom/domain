@@ -1,0 +1,74 @@
+[
+    {
+        "domain": "lyle.us.kg",
+        "expiryDate": "2025 年 7 月 11 日",
+        "registrar": "nic.ua",
+        "renewalFee": "free",
+        "remarks": "始终免费，如果距离到期日不足 180 天，可续订下一年。",
+        "isForSale": true
+    },
+    {
+        "domain": "lyle.pp.ua",
+        "expiryDate": "2026 年 3 月 27 日",
+        "registrar": "nic.ua",
+        "renewalFee": "free",
+        "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。",
+        "isForSale": false
+    },
+    {
+        "domain": "dog.pp.ua",
+        "expiryDate": "2026 年 3 月 27 日",
+        "registrar": "nic.ua",
+        "renewalFee": "free",
+        "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
+    },
+    {
+        "domain": "0u0.pp.ua",
+        "expiryDate": "2026 年 3 月 27 日",
+        "registrar": "nic.ua",
+        "renewalFee": "free",
+        "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
+    },
+    {
+        "domain": "msi.pp.ua",
+        "expiryDate": "2025 年 4 月 27 日",
+        "registrar": "nic.ua",
+        "renewalFee": "free",
+        "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
+    },
+    {
+        "domain": "pig.pp.ua",
+        "expiryDate": "2025 年 4 月 27 日",
+        "registrar": "nic.ua",
+        "renewalFee": "free",
+        "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
+    },
+    {
+        "domain": "pdf.pp.ua",
+        "expiryDate": "2025 年 4 月 27 日",
+        "registrar": "nic.ua",
+        "renewalFee": "free",
+        "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
+    },
+    {
+        "domain": "zip.pp.ua",
+        "expiryDate": "2025 年 5 月 28 日",
+        "registrar": "nic.ua",
+        "renewalFee": "free",
+        "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
+    },
+    {
+        "domain": "214666.xyz",
+        "expiryDate": "2025 年 4 月 24 日",
+        "registrar": "spaceship",
+        "renewalFee": "$0.67/Year",
+        "remarks": "啦啦啦"
+    },
+    {
+        "domain": "666214.xyz",
+        "expiryDate": "2025-04-24",
+        "registrar": "spaceship",
+        "renewalFee": "$0.67/Year",
+        "remarks": "噜噜噜"
+    }
+]

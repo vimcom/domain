@@ -1,0 +1,127 @@
+body, html {
+    font-family: 'LXGWWenKai', sans-serif; 
+    background-image: url('/public/images/placeholder.png');
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.table-container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.title-link {
+    font-size: 2.125rem; 
+    font-weight: bold;
+    padding: 12px 20px; 
+    color: black;
+    text-decoration: none;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th {
+    color: black;
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+td {
+    padding: 12px 20px;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+td .normal, td .soon-to-expire, td .expired {
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+td .normal {
+    color: #4CAF50;
+}
+
+td .normal:hover {
+    color: #45a049;
+}
+
+td .soon-to-expire {
+    color: #FFB400;
+}
+
+td .soon-to-expire:hover {
+    color: #FF9900;
+}
+
+td .expired {
+    color: #FF4C4C;
+}
+
+td .expired:hover {
+    color: #f14242;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-link {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #007bff;
+}
+
+.table-container #domain-list tr .registrar a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.table-container #domain-list tr .registrar a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    th, td {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
