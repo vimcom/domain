@@ -88,6 +88,16 @@ td .expired:hover {
     color: #f14242;
 }
 
+.table-container #domain-list tr .registrar a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.table-container #domain-list tr .registrar a:hover {
+    color: #007bff;
+}
+
 
 footer {
     text-align: center;
@@ -106,15 +116,7 @@ footer {
     color: #007bff;
 }
 
-.table-container #domain-list tr .registrar a {
-    color: black;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
 
-.table-container #domain-list tr .registrar a:hover {
-    color: #007bff;
-}
 
 @media (max-width: 768px) {
     .container {

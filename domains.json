@@ -1,19 +1,25 @@
-[
+{
+    "registrarLinks": {
+        "nic.ua": "https://nic.ua/",
+        "nic.us.kg": "https://nic.us.kg/",
+        "spaceship": "https://www.spaceship.com/",
+        "GoDaddy": "https://www.godaddy.com",
+        "Namecheap": "https://www.namecheap.com"
+    }, 
+    "domains": [
     {
         "domain": "lyle.us.kg",
         "expiryDate": "2025 年 7 月 11 日",
         "registrar": "nic.us.kg",
         "renewalFee": "free",
-        "remarks": "始终免费，如果距离到期日不足 180 天，可续订下一年。",
-        "isForSale": true
+        "remarks": "始终免费，如果距离到期日不足 180 天，可续订下一年。"
     },
     {
         "domain": "lyle.pp.ua",
         "expiryDate": "2026 年 3 月 27 日",
         "registrar": "nic.ua",
         "renewalFee": "free",
-        "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。",
-        "isForSale": false
+        "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
     },
     {
         "domain": "dog.pp.ua",
@@ -72,3 +78,4 @@
         "remarks": "噜噜噜"
     }
 ]
+}

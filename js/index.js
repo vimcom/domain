@@ -14,7 +14,7 @@ function parseChineseDate(dateStr) {
         const day = match[3].padStart(2, '0'); 
         return `${year}-${month}-${day}`; 
     }
-    return dateStr; 
+    return dateStr; // 如果不是中文日期，直接返回原字符串
 }
 
 // 格式化日期为中文格式 "YYYY 年 M 月 D 日"
@@ -25,17 +25,35 @@ function formatDateToChinese(date) {
     return `${year} 年 ${month} 月 ${day} 日`;
 }
 
-// 获取注册商链接
-function getRegistrarLink(registrar) {
-    const links = {
-        "nic.ua": "https://nic.ua/",
-        "nic.us.kg": "https://nic.us.kg/",
-        "spaceship": "https://www.spaceship.com/",
-        "GoDaddy": "https://www.godaddy.com",
-        "Namecheap": "https://www.namecheap.com",
-    };
+// 创建表格单元格的函数
+function createTableCell(content) {
+    const cell = document.createElement("td");
+    if (content instanceof Node) {
+        cell.appendChild(content); 
+    } else {
+        cell.textContent = content; 
+    }
+    return cell;
+}
 
-    return links[registrar] || "#"; // 默认返回 "#" 如果没有匹配
+// 创建注册商单元格并添加链接的函数
+function createRegistrarCell(registrar, registrarLinks) {
+    const cell = document.createElement("td");
+
+    // 获取对应的注册商链接，如果没有匹配的则返回 "#"
+    const registrarLink = registrarLinks[registrar] || "#";
+
+    const linkElement = document.createElement("a");
+    linkElement.href = registrarLink; // 设置链接地址
+    linkElement.target = "_blank";     // 在新窗口中打开链接
+    linkElement.textContent = registrar; // 设置链接文本为注册商名称
+
+    // 将链接添加到单元格中
+    cell.appendChild(linkElement);
+
+    // 为 <td> 元素添加 'registrar' 类名，以便在 CSS 中应用相应的样式
+    cell.classList.add('registrar');
+    return cell;
 }
 
 // 获取当前日期并更新页面
@@ -46,19 +64,27 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('date').textContent = formattedDate;
 });
 
-// 模拟从 /data/domains.json 获取数据
+// 从 JSON 获取数据并渲染表格
 fetch('/domains.json')
     .then(response => response.json())
-    .then(domains => {
-        const tableBody = document.querySelector("table tbody");
+    .then(data => {
+        const registrarLinks = data.registrarLinks;  // 获取注册商链接
+        const domains = data.domains;  // 获取域名数据
 
+        const tableBody = document.querySelector("table tbody");
+        
         // 清空表格内容
         tableBody.innerHTML = "";
 
         domains.forEach(domainData => {
             const currentDate = getCurrentDate();
-            const expiryDateStr = parseChineseDate(domainData.expiryDate);
-            const expiryDate = new Date(expiryDateStr); 
+            
+            // 判断日期格式并解析
+            let expiryDateStr = domainData.expiryDate;
+            if (expiryDateStr.includes("年")) {
+                expiryDateStr = parseChineseDate(expiryDateStr);  // 如果是中文日期，解析
+            }
+            const expiryDate = new Date(expiryDateStr);  // 转换为Date对象
             const daysLeft = Math.floor((expiryDate - currentDate) / (1000 * 60 * 60 * 24));
 
             // 创建表格行
@@ -84,12 +110,9 @@ fetch('/domains.json')
             // 创建表格单元格
             const domainCell = createTableCell(domainLink); 
             const expiryCell = createTableCell(formatDateToChinese(expiryDate)); 
-            const registrarCell = createRegistrarCell(domainData.registrar);
+            const registrarCell = createRegistrarCell(domainData.registrar, registrarLinks);
             const feeCell = createTableCell(domainData.renewalFee);
             const remarksCell = createTableCell(domainData.remarks);
-            
-            //const saleCell = document.createElement("td");
-            //saleCell.textContent = domainData.isForSale ? "是" : "否";  根据isForSale属性显示
 
             // 将各个单元格添加到表格行
             row.appendChild(domainCell);
@@ -97,7 +120,6 @@ fetch('/domains.json')
             row.appendChild(registrarCell);
             row.appendChild(feeCell);
             row.appendChild(remarksCell);
-            // row.appendChild(saleCell);  将是否交易单元格添加到行
 
             // 将行添加到表格中
             tableBody.appendChild(row);
@@ -107,26 +129,3 @@ fetch('/domains.json')
         console.error("加载域名数据失败", error);
         alert("加载域名数据失败，请稍后再试！");
     });
-
-// 创建表格单元格的函数
-function createTableCell(content) {
-    const cell = document.createElement("td");
-    if (content instanceof Node) {
-        cell.appendChild(content); 
-    } else {
-        cell.textContent = content; 
-    }
-    return cell;
-}
-
-// 创建注册商单元格并添加链接的函数
-function createRegistrarCell(registrar) {
-    const cell = document.createElement("td");
-    cell.classList.add('registrar');
-    const registrarLink = document.createElement("a");
-    registrarLink.href = getRegistrarLink(registrar);
-    registrarLink.target = "_blank";
-    registrarLink.textContent = registrar;
-    cell.appendChild(registrarLink);
-    return cell;
-}
