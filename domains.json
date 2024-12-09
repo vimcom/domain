@@ -2,9 +2,11 @@
     "registrarLinks": {
         "nic.ua": "https://nic.ua/",
         "nic.us.kg": "https://nic.us.kg/",
-        "spaceship": "https://www.spaceship.com/",
+        "Spaceship": "https://www.spaceship.com/",
         "GoDaddy": "https://www.godaddy.com",
-        "Namecheap": "https://www.namecheap.com"
+        "Namecheap": "https://www.namecheap.com",
+        "Name": "https://www.name.com/",
+        "Dotserve": "http://dotserve.website"
     }, 
     "domains": [
     {
@@ -66,16 +68,44 @@
     {
         "domain": "214666.xyz",
         "expiryDate": "2025 年 4 月 24 日",
-        "registrar": "spaceship",
+        "registrar": "Spaceship",
         "renewalFee": "$0.67/Year",
         "remarks": "啦啦啦"
     },
     {
         "domain": "666214.xyz",
         "expiryDate": "2025-04-24",
-        "registrar": "spaceship",
+        "registrar": "Spaceship",
         "renewalFee": "$0.67/Year",
         "remarks": "噜噜噜"
+    },
+    {
+        "domain": "lyle0u0.live",
+        "expiryDate": "2025-03-19",
+        "registrar": "Name",
+        "renewalFee": "free",
+        "remarks": "嘻嘻嘻"
+    },
+    {
+        "domain": "lyle0u0.me",
+        "expiryDate": "2025-03-19",
+        "registrar": "Namecheap",
+        "renewalFee": "free",
+        "remarks": "哈哈哈"
+    },
+    {
+        "domain": "lyle0u0.tech",
+        "expiryDate": "2025-03-19",
+        "registrar": "Dotserve",
+        "renewalFee": "free",
+        "remarks": "嘿嘿嘿"
+    },
+    {
+        "domain": "183360463.xyz",
+        "expiryDate": "2025-02-01",
+        "registrar": "GoDaddy",
+        "renewalFee": "free",
+        "remarks": "嘁嘁嘁"
     }
 ]
 }
