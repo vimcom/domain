@@ -112,6 +112,7 @@ fetch('/domains.json')
             const expiryCell = createTableCell(formatDateToChinese(expiryDate)); 
             const registrarCell = createRegistrarCell(domainData.registrar, registrarLinks);
             const feeCell = createTableCell(domainData.renewalFee);
+            const salePriceCell = createTableCell(domainData.salePrice || "null"); // 添加 "未出售"
             const remarksCell = createTableCell(domainData.remarks);
 
             // 将各个单元格添加到表格行
@@ -119,6 +120,7 @@ fetch('/domains.json')
             row.appendChild(expiryCell);
             row.appendChild(registrarCell);
             row.appendChild(feeCell);
+            row.appendChild(salePriceCell);
             row.appendChild(remarksCell);
 
             // 将行添加到表格中

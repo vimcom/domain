@@ -6,7 +6,9 @@
         "GoDaddy": "https://www.godaddy.com",
         "Namecheap": "https://www.namecheap.com",
         "Name": "https://www.name.com/",
-        "Dotserve": "http://dotserve.website"
+        "Dotserve": "http://dotserve.website",
+        "MarkMonitor":"http://www.markmonitor.com",
+        "comlaude":"https://comlaude.com/"
     }, 
     "domains": [
     {
@@ -14,20 +16,23 @@
         "expiryDate": "2025 年 7 月 11 日",
         "registrar": "nic.us.kg",
         "renewalFee": "free",
-        "remarks": "始终免费，如果距离到期日不足 180 天，可续订下一年。"
+        "salePrice": null,
+        "remarks": "免费域名，不足 180 天，可续订下一年。"
     },
     {
         "domain": "lyle.pp.ua",
         "expiryDate": "2026 年 3 月 27 日",
         "registrar": "nic.ua",
         "renewalFee": "free",
-        "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
+        "salePrice": null,
+        "remarks": "免费域名，不足 4 个月手动续费，每月最多续费3个域名。"
     },
     {
         "domain": "dog.pp.ua",
         "expiryDate": "2026 年 3 月 27 日",
         "registrar": "nic.ua",
         "renewalFee": "free",
+        "salePrice": null,
         "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
     },
     {
@@ -35,6 +40,7 @@
         "expiryDate": "2026 年 3 月 27 日",
         "registrar": "nic.ua",
         "renewalFee": "free",
+        "salePrice": null,
         "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
     },
     {
@@ -42,6 +48,7 @@
         "expiryDate": "2025 年 4 月 27 日",
         "registrar": "nic.ua",
         "renewalFee": "free",
+        "salePrice": null,
         "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
     },
     {
@@ -49,6 +56,7 @@
         "expiryDate": "2025 年 4 月 27 日",
         "registrar": "nic.ua",
         "renewalFee": "free",
+        "salePrice": null,
         "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
     },
     {
@@ -56,6 +64,7 @@
         "expiryDate": "2025 年 4 月 27 日",
         "registrar": "nic.ua",
         "renewalFee": "free",
+        "salePrice": null,
         "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
     },
     {
@@ -63,6 +72,7 @@
         "expiryDate": "2025 年 5 月 28 日",
         "registrar": "nic.ua",
         "renewalFee": "free",
+        "salePrice": null,
         "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
     },
     {
@@ -70,6 +80,7 @@
         "expiryDate": "2025 年 4 月 24 日",
         "registrar": "Spaceship",
         "renewalFee": "$0.67/Year",
+        "salePrice": null,
         "remarks": "啦啦啦"
     },
     {
@@ -77,6 +88,7 @@
         "expiryDate": "2025-04-24",
         "registrar": "Spaceship",
         "renewalFee": "$0.67/Year",
+        "salePrice": null,
         "remarks": "噜噜噜"
     },
     {
@@ -84,6 +96,7 @@
         "expiryDate": "2025-03-19",
         "registrar": "Name",
         "renewalFee": "free",
+        "salePrice": null,
         "remarks": "嘻嘻嘻"
     },
     {
@@ -91,6 +104,7 @@
         "expiryDate": "2025-03-19",
         "registrar": "Namecheap",
         "renewalFee": "free",
+        "salePrice": null,
         "remarks": "哈哈哈"
     },
     {
@@ -98,14 +112,30 @@
         "expiryDate": "2025-03-19",
         "registrar": "Dotserve",
         "renewalFee": "free",
+        "salePrice": null,
         "remarks": "嘿嘿嘿"
+    },{
+        "domain": "chatgpt.com",
+        "expiryDate": "2026-11-30",
+        "registrar": "MarkMonitor",
+        "renewalFee": "999BTC",
+        "salePrice": "999BTC",
+        "remarks": "长时间有效显示绿色"
+    },{
+        "domain": "apple.com",
+        "expiryDate": "2025-02-20",
+        "registrar": "comlaude",
+        "renewalFee": "999BTC",
+        "salePrice": "999BTC",
+        "remarks": "即将到期显示黄色"
     },
     {
-        "domain": "183360463.xyz",
-        "expiryDate": "2025-02-01",
-        "registrar": "GoDaddy",
-        "renewalFee": "free",
-        "remarks": "嘁嘁嘁"
+        "domain": "google.com",
+        "expiryDate": "1970年1月1日",
+        "registrar": "MarkMonitor",
+        "renewalFee": "999BTC",
+        "salePrice": "999BTC",
+        "remarks": "已过期显示红色"
     }
 ]
 }
