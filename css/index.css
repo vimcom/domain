@@ -1,5 +1,13 @@
-body, html {
-    font-family: 'LXGWWenKai', sans-serif; 
+:root {
+    --font-size-base: 16px;
+    --primary-color: black;
+    --hover-color: #0278ff;
+    --underline-color: black;
+    --icon-size: 1.875rem;
+  }
+  
+  body, html {
+    font-family: 'LXGWWenKai', sans-serif;
     background-image: url('/image/placeholder.png');
     background-color: #f5f7fa;
     margin: 0;
@@ -7,179 +15,201 @@ body, html {
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.container {
+  }
+  
+  /* 容器样式 */
+  .container {
     width: 100%;
     max-width: 1200px;
     margin: 30px auto;
     padding: 30px;
     border-radius: 10px;
     flex: 1;
-}
-
-.title-link {
-    font-size: 2.125rem; 
+  }
+  
+  /* 标题样式 */
+  .title-link {
+    font-size: 2.125rem;
     font-weight: bold;
-    padding: 12px 20px; 
+    padding: 12px 20px;
     color: black;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
     transition: all 0.3s ease;
-    text-align: center;  
-    animation: fadeIn 0.5s ease-out; /* 标题加载时的动画 */
-}
-
-
-/* 表格容器 */
-.table-container {
+    text-align: center;
+    animation: fadeIn 0.5s ease-out; 
+  }
+  
+  /* 表格容器 */
+  .table-container {
     width: 100%;
-    margin-top: 30px;
-}
-
-/* 表格样式 */
-table {
-    width: 100%;
+    margin: 0 auto; 
+    padding: 0 15px; 
+    box-sizing: border-box;
+  }
+  
+  /* 表格样式 */
+  table {
+    width: 100%; 
     border-collapse: collapse;
     margin-bottom: 30px;
-}
-
-th {
+  }
+  
+  /* 表头样式 */
+  th {
     color: black;
     padding: 12px 20px;
     text-align: center;
     font-weight: 600;
-    white-space: nowrap;  /* 防止表头换行 */
-    animation: fadeIn 0.5s ease-out; /* 表头加载动画 */
-}
-
-td {
+    white-space: nowrap;  
+  }
+  
+  /* 单元格样式 */
+  td {
     padding: 12px 20px;
     font-size: 1rem;
     text-align: center;
     transition: background-color 0.3s ease;
-}
-
-td a {
+  }
+  
+  /* 链接样式 */
+  td a {
     color: inherit;
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-td a:hover {
+  }
+  
+  td a:hover {
     color: #007bff;
-}
-
-/* 域名状态标记样式 */
-td .normal, td .soon-to-expire, td .expired {
+  }
+  
+  /* 域名状态标记样式 */
+  td .normal, td .soon-to-expire, td .expired {
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-td .normal {
+  }
+  
+  td .normal {
     color: #4CAF50;
-}
-
-td .normal:hover {
+  }
+  
+  td .normal:hover {
     color: #45a049;
-}
-
-td .soon-to-expire {
+  }
+  
+  td .soon-to-expire {
     color: #FFB400;
-}
-
-td .soon-to-expire:hover {
+  }
+  
+  td .soon-to-expire:hover {
     color: #FF9900;
-}
-
-td .expired {
+  }
+  
+  td .expired {
     color: #FF4C4C;
-}
-
-td .expired:hover {
+  }
+  
+  td .expired:hover {
     color: #f14242;
-}
-
-/* 注册商链接样式 */
-.table-container #domain-list tr .registrar a {
+  }
+  
+  /* 注册商链接样式 */
+  .table-container #domain-list tr .registrar a {
     color: black;
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-.table-container #domain-list tr .registrar a:hover {
+  }
+  
+  .table-container #domain-list tr .registrar a:hover {
     color: #007bff;
-}
-
-/* 页脚样式 */
-footer {
+  }
+  
+  /* 页脚样式 */
+  footer {
     text-align: center;
     font-size: 1rem;
     width: 100%;
     margin-top: auto;
-}
-
-.footer-link {
+  }
+  
+  .footer-link {
     color: black;
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-.footer-link:hover {
+  }
+  
+  .footer-link:hover {
     color: #007bff;
-}
-
-.separator {
-    margin: 0 8px; 
-    font-weight: bold; 
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-    .title-link {
-        font-size: 1.5rem; 
-        padding: 10px 15px; 
-    }
-    .container {
-        padding: 15px;
-    }
-
-    th, td {
-        font-size: 0.9rem;
-        padding: 8px 12px;
-    }
-
-    /* 移除竖排样式，确保表头横向显示 */
-    th {
-        writing-mode: initial; 
-    }
-
-    td {
-        padding: 10px 8px; 
-    }
-}
-
-/* 添加渐显效果 */
-@keyframes fadeIn {
+  }
+  
+  .separator {
+    margin: 0 8px;
+    font-weight: bold;
+  }
+  
+  /* 动画：元素从透明到可见，并且从小到大 */
+  @keyframes fadeIn {
     0% {
-        opacity: 0;
-        transform: scale(0.5);
+      opacity: 0;
+      transform: scale(0.5);
     }
     100% {
-        opacity: 1;
-        transform: scale(1);
+      opacity: 1;
+      transform: scale(1);
     }
-}
-
-table tr {
+  }
+  
+  table tr {
     animation: fadeIn 0.5s ease-out;
-}
-.title-link {
+  }
+  
+  .title-link {
     animation: fadeIn 0.5s ease-out;
-}
+  }
+  
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .title-link {
+      font-size: 1.5rem;
+      padding: 10px 15px;
+      transition: font-size 0.3s ease, padding 0.3s ease;
+    }
+  
+    .container {
+      padding: 15px;
+      width: 100%; 
+    }
+  
+    th, td {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  
+    /* 表头不旋转 */
+    th {
+      writing-mode: initial;
+      text-align: center;
+      font-weight: 600;
+      color: black;
+    }
+  
+    td {
+      padding: 10px 8px;
+    }
+  
+    /* 保证表格在手机端居中 */
+    .table-container {
+      max-width: 100%; 
+    }
+  
+    table {
+      width: 100%; 
+    }
+  }
+  
