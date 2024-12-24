@@ -9,6 +9,7 @@
         "Dotserve": "http://dotserve.website",
         "MarkMonitor":"http://www.markmonitor.com",
         "comlaude":"https://comlaude.com/"
+        "1gb.ua":"https://www.1gb.ua/"
     }, 
     "domains": [
     {
@@ -74,6 +75,15 @@
         "renewalFee": "free",
         "salePrice": null,
         "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
+    },
+    
+    {
+        "domain": "lyle.cc.ua",
+        "expiryDate": "2025 年 12 月 24 日",
+        "registrar": "1gb.ua",
+        "renewalFee": "free",
+        "salePrice": null,
+        "remarks": "应该是自动续费的"
     },
     {
         "domain": "214666.xyz",
