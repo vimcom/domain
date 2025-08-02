@@ -1,7 +1,7 @@
 {
     "registrarLinks": {
         "nic.ua": "https://nic.ua/",
-        "nic.us.kg": "https://nic.us.kg/",
+        "nic.us.kg": "https://dash.domain.digitalplat.org/",
         "Spaceship": "https://www.spaceship.com/",
         "GoDaddy": "https://www.godaddy.com",
         "Namecheap": "https://www.namecheap.com",
@@ -9,27 +9,28 @@
         "Dotserve": "http://dotserve.website",
         "MarkMonitor":"http://www.markmonitor.com",
         "comlaude":"https://comlaude.com/",
+        "OpenHostRegistry":"https://registry.openhost.uk/",
         "1gb.ua":"https://www.1gb.ua/"
     }, 
     "domains": [
     {
-        "domain": "lyle.us.kg",
-        "expiryDate": "2026 年 7 月 11 日",
+        "domain": "365.dpdns.org",
+        "expiryDate": "2026 年 5 月 27 日",
         "registrar": "nic.us.kg",
         "renewalFee": "free",
         "salePrice": null,
         "remarks": "免费域名，不足 180 天，可续订下一年。"
     },
         {
-        "domain": "domainmatrix.us.kg",
-        "expiryDate": "2026 年 7 月 11 日",
+        "domain": "new.dpdns.org",
+        "expiryDate": "2026 年 5 月 27 日",
         "registrar": "nic.us.kg",
         "renewalFee": "free",
         "salePrice": null,
         "remarks": "免费域名，不足 180 天，可续订下一年。"
     },
     {
-        "domain": "lyle.pp.ua",
+        "domain": "ec2.pp.ua",
         "expiryDate": "2026 年 3 月 27 日",
         "registrar": "nic.ua",
         "renewalFee": "free",
@@ -94,12 +95,12 @@
         "remarks": "应该是自动续费的"
     },
     {
-        "domain": "214666.xyz",
+        "domain": "isix.prvcy.page",
         "expiryDate": "2025 年 4 月 24 日",
-        "registrar": "Spaceship",
-        "renewalFee": "$0.67/Year",
+        "registrar": "OpenHostRegistry",
+        "renewalFee": "free",
         "salePrice": null,
-        "remarks": "啦啦啦"
+        "remarks": "免费域名，不足 90 天，可续订下一年。"
     },
     {
         "domain": "666214.xyz",
