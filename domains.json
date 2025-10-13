@@ -78,7 +78,7 @@
     },
     {
         "domain": "zip.pp.ua",
-        "expiryDate": "2025 年 5 月 28 日",
+        "expiryDate": "2026 年 5 月 28 日",
         "registrar": "nic.ua",
         "renewalFee": "free",
         "salePrice": null,
@@ -102,7 +102,7 @@
     },
     {
         "domain": "chatgpt.com",
-        "expiryDate": "2026-11-30",
+        "expiryDate": "2099-11-30",
         "registrar": "MarkMonitor",
         "renewalFee": "999BTC",
         "salePrice": "999BTC",
@@ -110,7 +110,7 @@
     },
     {
         "domain": "apple.com",
-        "expiryDate": "2025-02-20",
+        "expiryDate": "2026-02-20",
         "registrar": "comlaude",
         "renewalFee": "999BTC",
         "salePrice": "999BTC",
