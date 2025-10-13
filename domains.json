@@ -13,15 +13,15 @@
     }, 
     "domains": [
     {
-        "domain": "lyle.us.kg",
+        "domain": "lyle.dpdns.org",
         "expiryDate": "2026 年 7 月 11 日",
         "registrar": "nic.us.kg",
         "renewalFee": "free",
         "salePrice": null,
         "remarks": "免费域名，不足 180 天，可续订下一年。"
     },
-        {
-        "domain": "domainmatrix.us.kg",
+    {
+        "domain": "domainmatrix.dpdns.org",
         "expiryDate": "2026 年 7 月 11 日",
         "registrar": "nic.us.kg",
         "renewalFee": "free",
@@ -84,7 +84,6 @@
         "salePrice": null,
         "remarks": "每年到期前 4 个月手动续费，每月最多续费3个域名。"
     },
-    
     {
         "domain": "lyle.cc.ua",
         "expiryDate": "2025 年 12 月 24 日",
@@ -92,22 +91,6 @@
         "renewalFee": "free",
         "salePrice": null,
         "remarks": "应该是自动续费的"
-    },
-    {
-        "domain": "214666.xyz",
-        "expiryDate": "2025 年 4 月 24 日",
-        "registrar": "Spaceship",
-        "renewalFee": "$0.67/Year",
-        "salePrice": null,
-        "remarks": "啦啦啦"
-    },
-    {
-        "domain": "666214.xyz",
-        "expiryDate": "2025-04-24",
-        "registrar": "Spaceship",
-        "renewalFee": "$0.67/Year",
-        "salePrice": null,
-        "remarks": "噜噜噜"
     },
     {
         "domain": "lyle.news",
@@ -118,36 +101,14 @@
         "remarks": "优惠码白嫖"
     },
     {
-        "domain": "lyle0u0.live",
-        "expiryDate": "2025-03-19",
-        "registrar": "Name",
-        "renewalFee": "free",
-        "salePrice": null,
-        "remarks": "嘻嘻嘻"
-    },
-    {
-        "domain": "lyle0u0.me",
-        "expiryDate": "2025-03-19",
-        "registrar": "Namecheap",
-        "renewalFee": "free",
-        "salePrice": null,
-        "remarks": "哈哈哈"
-    },
-    {
-        "domain": "lyle0u0.tech",
-        "expiryDate": "2025-03-19",
-        "registrar": "Dotserve",
-        "renewalFee": "free",
-        "salePrice": null,
-        "remarks": "嘿嘿嘿"
-    },{
         "domain": "chatgpt.com",
         "expiryDate": "2026-11-30",
         "registrar": "MarkMonitor",
         "renewalFee": "999BTC",
         "salePrice": "999BTC",
         "remarks": "长时间有效显示绿色"
-    },{
+    },
+    {
         "domain": "apple.com",
         "expiryDate": "2025-02-20",
         "registrar": "comlaude",
